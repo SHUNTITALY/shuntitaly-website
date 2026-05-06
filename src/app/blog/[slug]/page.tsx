@@ -4,6 +4,10 @@ type PageProps = {
   }>;
 };
 
+export default function BlogSlugPage() {
+  return <div>Blog page</div>
+}
+
 export default async function BlogPostPage({ params }: PageProps) {
   const { slug } = await params;
 

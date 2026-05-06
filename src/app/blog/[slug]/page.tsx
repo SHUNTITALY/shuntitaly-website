@@ -1,15 +1,9 @@
 type PageProps = {
-  params: Promise<{
-    slug: string;
-  }>;
-};
-
-export default function BlogSlugPage() {
-  return <div>Blog page</div>
+  params: { slug: string }
 }
 
-export default async function BlogPostPage({ params }: PageProps) {
-  const { slug } = await params;
+export default function BlogPostPage({ params }: PageProps) {
+  const { slug } = params
 
   return (
     <main className="bg-white px-6 py-24">
@@ -21,11 +15,7 @@ export default async function BlogPostPage({ params }: PageProps) {
         <h1 className="text-5xl font-black capitalize text-slate-950">
           {slug.replaceAll("-", " ")}
         </h1>
-
-        <p className="mt-6 text-lg leading-8 text-slate-600">
-          Articolo tecnico Shunt Italy in preparazione.
-        </p>
       </div>
     </main>
-  );
+  )
 }

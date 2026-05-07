@@ -36,7 +36,7 @@ export default function Footer() {
           <h3 className="font-bold">Contatti</h3>
           <div className="mt-4 flex flex-col gap-3 text-slate-300">
             <a href="mailto:info@shuntitaly.it">info@shuntitaly.it</a>
-            <a href="tel:+390398961342">+39 039 8961342</a>
+            <a href="tel:+390398961342">+39 02 49425935</a>
             <Link href="/contatti">Richiedi preventivo</Link>
           </div>
         </div>
